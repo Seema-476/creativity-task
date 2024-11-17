@@ -7,6 +7,24 @@
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>creativity-task</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    container: {
+                        center: true,
+                        padding: "20px",
+                        screens: {
+                            'sm': "640px",
+                            'md': "768px",
+                            'lg': "1024px",
+                            'xl': "1180px",
+                        }
+                    },
+                }
+            },
+        }
+    </script>
 </head>
 
 <body>
@@ -25,7 +43,7 @@
         </div>
     </section>
 
-    <!-- tilt animation -->
+    <!-- lottie animation -->
     <section class="py-10">
         <div class="container">
             <p class="font-mono text-4xl font-bold text-black text-center pb-8">LOTTIE ANIMATION</p>
@@ -35,6 +53,24 @@
                 direction="5" mode="normal"></lottie-player>
         </div>
     </section>
+
+    <!-- keyframe -->
+     <section class="bg-[#0007]">
+        <div class="container">
+           <div class="images h-screen flex justify-center items-center">
+            <div class="image-box relative max-md:w-[100px] w-[300px] h-[300px] max-md:h-[100px] bg-transparent">
+                <span style="--i:1;"><img src="./assets/images/png/cat.jpg" alt="cat" class="w-[500px]"></span>
+                <span style="--i:2;"><img src="./assets/images/png/panda.jpg" alt="panda" class="w-[500px]"></span>
+                <span style="--i:3;"><img src="./assets/images/png/cat.jpg" alt="cat" class="w-[500px]"></span>
+                <span style="--i:4;"><img src="./assets/images/png/panda.jpg" alt="panda" class="w-[500px]"></span>
+                <span style="--i:5;"><img src="./assets/images/png/cat.jpg" alt="cat" class="w-[500px]"></span>
+                <span style="--i:6;"><img src="./assets/images/png/panda.jpg" alt="panda" class="w-[500px]"></span>
+                <span style="--i:7;"><img src="./assets/images/png/cat.jpg" alt="cat" class="w-[500px]"></span>
+                <span style="--i:8;"><img src="./assets/images/png/panda.jpg" alt="panda" class="w-[500px]"></span>
+            </div>
+           </div>
+        </div>
+     </section>
 
 
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
